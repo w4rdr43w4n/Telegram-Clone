@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT</title>
+  </head>
+  <body>
+    <nav>
+      <label>
+        <input type="radio" name="group" value="I1" checked />
+        <span>Item 1</span>
+      </label>
+      <label>
+        <input type="radio" name="group" value="I2" />
+        <span>Item 2</span>
+      </label>
+      <label>
+        <input type="radio" name="group" value="I3" />
+        <span>Item 3</span>
+      </label>
+      <label>
+        <input type="radio" name="group" value="I4" />
+        <span>Item 4</span>
+      </label>
+      <label>
+        <input type="radio" name="group" value="I5" />
+        <span></span>
+      </label>
+    </nav>
+  </body>
+  <style>
+    body {
+      background-color: #181818;
+    }
+    nav input[type="radio"] {
+      display: none;
+    }
+    nav span {
+      display: inline-block;
+      border-bottom: 4px solid transparent;
+      padding: 3px 7px;
+    }
+    nav span:hover {
+      background-color: #e6e6e6;
+    }
+    nav input[type="radio"]:checked + span {
+      background-color: blueviolet;
+    }
+  </style>
+</html>

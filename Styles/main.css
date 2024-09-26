@@ -1,0 +1,72 @@
+@font-face{
+  font-family:Roboto ;
+  src: url('Fonts/Roboto-Regular.ttf');
+}
+
+
+*{
+  font-family: Roboto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  scroll-behavior:smooth;
+  user-select: none;
+  
+}
+:root{
+  width: 100%;
+  height: 100%;
+  --theme_color:#212121;
+  --focus_theme_color:#6f60b3;
+  --dark_theme_color:#181818;
+}
+html,body{
+  width:100%;
+  height: 100vh;
+}
+body{
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  background-color:var(--dark_theme_color);
+ /* background: url('telegram_background.jpg') repeat 25px 25px fixed;*/
+  flex: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+section::-webkit-scrollbar{
+  width: 5px;
+  background-color: transparent;
+  margin: 0;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+ 
+}
+section::-webkit-scrollbar-thumb{
+  background-color: transparent;
+  border-radius: 5px;
+  border: none;
+  outline:none;
+ 
+}
+
+section::-webkit-scrollbar-button{
+  height: 0;
+  width:0;
+}
+section::-webkit-scrollbar-corner{
+  background-color: transparent;
+}
+section::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+section::-webkit-scrollbar-track-piece{
+  background-color: transparent;
+}
+

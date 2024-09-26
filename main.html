@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telegram Clone</title>
+    <link rel="stylesheet" href="Styles/main.css" />
+    <link rel="stylesheet" href="Styles/header.css" />
+    <link rel="stylesheet" href="Styles/side_bar.css" />
+    <link rel="stylesheet" href="Styles/menu.css" />
+    <link rel="stylesheet" href="Styles/chat-nav.css" />
+    <link rel="stylesheet" href="Styles/chat-room.css" />
+    <link rel="stylesheet" href="font_awesome/css/all.css" />
+
+    <link rel="icon" href="icon.ico" type="image/icon" />
+  </head>
+  <body>
+    <section class="side-bar">
+      <header class="left_header">
+        <button class="menu-button">
+          <div class="menu-bars">
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+            <div class="menu-bar"></div>
+          </div>
+        </button>
+        <section class="search-bar-container">
+          <input type="text" class="chat-search" placeholder="Search" />
+          <span class="fa fa-search header-search-icon"></span>
+        </section>
+      </header>
+      <section class="chat-list">
+        <!-- Chat -->
+        <label>
+          <input type="radio" value="I1" name="chat" checked />
+          <section class="chat">
+            <img class="chat-img-sidebar" src="profile-images/prof1.jpeg" />
+            <section class="side-chat-info">
+              <h3>Ward Rawan</h3>
+              <h4>Hello!!</h4>
+            </section>
+            <span class="lst-time">&checkmark; 03:21</span>
+          </section>
+        </label>
+
+        <!-- Chat -->
+        <label>
+          <input type="radio" value="I2" name="chat" />
+          <section class="chat">
+            <img class="chat-img-sidebar" src="profile-images/prof1.jpeg" />
+            <section class="side-chat-info">
+              <h3>Ward Rawan</h3>
+              <h4>Hello!!</h4>
+            </section>
+            <span class="lst-time">&checkmark; 03:21</span>
+          </section>
+        </label>
+        <label>
+          <input type="radio" value="I3" name="chat" />
+          <section class="chat">
+            <img class="chat-img-sidebar" src="profile-images/prof2.jpg" />
+            <section class="side-chat-info">
+              <h3>Nada Rawan</h3>
+              <h4>Fifi!!</h4>
+            </section>
+            <span class="lst-time">&checkmark; 00:00</span>
+          </section>
+        </label>
+      </section>
+      <span class="fas fa-pencil new-chat"></span>
+    </section>
+    <main>
+      <header class="right_header">
+        <section class="profile-container">
+          <section class="profile-img">
+            <img class="profile-img-header" src="profile-images/prof1.jpeg" />
+          </section>
+          <section class="chat-info">
+            <h3>Ward rawan</h3>
+            <h4>last seen just now</h4>
+          </section>
+        </section>
+        <section class="header-tool-bar">
+          <i class="fa fa-phone bar-icon"></i>
+          <i class="fa fa-search bar-icon"></i>
+          <i class="fa fa-ellipsis-v bar-icon"></i>
+        </section>
+      </header>
+
+      <section class="chat-room">
+        <section class="chat-room-space">
+          <section class="msg-day-row">
+            <span class="msg-day">January 4</span>
+          </section>
+          <!-- Message M BEGIN-->
+          <section class="msg-row msg-row-m">
+            <section class="msg msg-m">
+              <p class="msg-content">Hgreer</p>
+              <span class="msg-time">19:07 </span>
+            </section>
+          </section>
+          <!-- Message END-->
+
+          <!-- Message Y BEGIN-->
+          <section class="msg-row msg-row-y">
+            <section class="msg msg-y">
+              <p class="msg-content">Hello!</p>
+              <span class="msg-time">19:07</span>
+            </section>
+          </section>
+
+          <!-- Message M END-->
+        </section>
+        <section class="msg-bar">
+          <section class="msg-input-container">
+            <span class="far fa-smile emoji"></span>
+            <input type="text" class="msg-input" placeholder="Message" />
+            <span class="fas fa-paperclip attach"></span>
+          </section>
+          <span class="fas fa-microphone voice"></span>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
